@@ -6,7 +6,7 @@ import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <div className="bg-black h-screen p-2">
+    <div className="bg-black h-full p-2">
       <App />
     </div>
   </>

@@ -1,13 +1,23 @@
 import React from 'react'
 import Navbar from './Navbar'
-import Products from './Products'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import Main from './Main'
+
+import Dnbeauti from './Products/Dnbeauti'
 
 const App = () => {
   return (
     <>
-    <div className='bg-black w-full'>
+    <div>
+      <BrowserRouter>
       <Navbar/>
-      <Products/>
+        <Routes>
+          <Route path='/' element= {<Main/>}/>
+          <Route path='/shorts' element={<Dnbeauti/>}/>
+        </Routes>
+      </BrowserRouter>
+      
+     
       </div>
     </>
   )
